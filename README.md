@@ -78,6 +78,7 @@ https://whimsical.com/CNeXbZtYvv1fF5eJ7NT4ri
 | Initial HTML setup | H | 3hrs| 
 | CSS for basic layout | H| 3hrs| 
 | Axios set up | H | 3hrs|  
+| Axios set up for map | H | 3hrs| 
 | Media query setup | H | 3hrs|
 | CSS for results | M| 3hrs| 
 | Image setup | M | 2hrs|
@@ -85,7 +86,7 @@ https://whimsical.com/CNeXbZtYvv1fF5eJ7NT4ri
 | Render results | H | 3hrs| 
 | General Research | M | 3hrs| 
 | Other JS | M | 3hrs|
-| Total | H | 29hrs| 
+| Total | H | 32hrs| 
 
 ## Code Snippet
 
