@@ -53,7 +53,7 @@ https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches
 - Make the site responsive to desktop and mobile
 
 #### PostMVP
-- A map feature to display with the farm address location
+- A map feature to display the location pin of the all list of farms displayed
 - When we click the website url, takes to the farm's website page
 
 ## Project Schedule
