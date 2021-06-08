@@ -9,13 +9,20 @@ Pick a fruit and search for farms which sells that fruit in Connecticut
 ## Wireframe - Desktop
 https://whimsical.com/desktop-wireframe-DM83RAMeYzkb3EVKyg39Vn
 
+![image](https://user-images.githubusercontent.com/84349667/121225418-1da11680-c84f-11eb-946c-c49d771ff7a9.png)
+
+
 
 ## Wireframe - Mobile
 https://whimsical.com/mobilewireframe-YbXNnFyUDxW8GFFi8FSako
 
+![image](https://user-images.githubusercontent.com/84349667/121225020-baaf7f80-c84e-11eb-8c8a-7a71d41724d6.png)
+
+
 
 ## API and Data Sample
 https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches
+```JSON
 [
   {
     "farm_name": "Karabin Farms",
@@ -42,6 +49,7 @@ https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches
     "location_1_zip": "06489"
   },
   
+```
   
 ### MVP/PostMVP
 #### MVP
@@ -83,9 +91,9 @@ https://whimsical.com/CNeXbZtYvv1fF5eJ7NT4ri
 | Image setup | M | 2hrs|
 | Debugging | H | 3hrs| 
 | Render results | H | 3hrs| 
+| Post MVP features | M | 3hrs|
 | General Research | M | 3hrs| 
 | Other JS | M | 3hrs|
-| Other good to have features | M | 3hrs|
 | Total | H | 32hrs| 
 
 ## Code Snippet
