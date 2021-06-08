@@ -9,6 +9,9 @@ Pick a fruit and search for farms which sells that fruit in Connecticut
 ## Wireframe
 https://whimsical.com/copy-of-3vC3s448eJg1Ce6eYYyUrN
 
+![image](https://user-images.githubusercontent.com/84349667/121120328-f7de2800-c7e2-11eb-8595-6ced56890410.png)
+
+
 ### MVP/PostMVP
 #### MVP
 - Pick a value from dropdown
