@@ -9,7 +9,7 @@ Pick a fruit and search for farms which sells that fruit in Connecticut
 ## Wireframe - Desktop
 https://whimsical.com/desktop-wireframe-DM83RAMeYzkb3EVKyg39Vn
 
-![image](https://user-images.githubusercontent.com/84349667/121225418-1da11680-c84f-11eb-946c-c49d771ff7a9.png)
+![image](https://user-images.githubusercontent.com/84349667/121225621-52ad6900-c84f-11eb-832a-9bdc8e752f4b.png)
 
 
 
