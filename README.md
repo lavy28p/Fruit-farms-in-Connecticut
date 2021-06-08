@@ -6,6 +6,15 @@ Fruit-farms-in-Connecticut
 ## Project Description
 Pick a fruit and search for farms which sells that fruit in Connecticut 
 
+## Wireframe
+https://whimsical.com/copy-of-3vC3s448eJg1Ce6eYYyUrN
+
+### MVP/PostMVP
+#### MVP
+- Pick a value from dropdown
+- Click Search
+- Axios call on connecticut government API with fruits category
+
 ## API and Data Sample
 https://data.ct.gov/resource/y6p2-px98.json?category=Fruit
 
@@ -43,14 +52,7 @@ https://data.ct.gov/resource/y6p2-px98.json?category=Fruit
         41.811254944000495
       ]
 
-## Wireframe
-https://whimsical.com/copy-of-3vC3s448eJg1Ce6eYYyUrN
 
-### MVP/PostMVP
-#### MVP
-- Pick a value from dropdown
-- Click Search
-- Axios call on connecticut government API with fruits category
 
 
 
