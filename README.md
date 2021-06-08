@@ -7,14 +7,11 @@ Fruit-farms-in-Connecticut
 Pick a fruit and search for farms which sells that fruit in Connecticut 
 
 ## Wireframe - Desktop
-https://whimsical.com/copy-of-3vC3s448eJg1Ce6eYYyUrN
+https://whimsical.com/desktop-wireframe-DM83RAMeYzkb3EVKyg39Vn
 
-![image](https://user-images.githubusercontent.com/84349667/121120328-f7de2800-c7e2-11eb-8595-6ced56890410.png)
 
 ## Wireframe - Mobile
 https://whimsical.com/mobilewireframe-YbXNnFyUDxW8GFFi8FSako
-
-![image](https://user-images.githubusercontent.com/84349667/121209667-a6648600-c840-11eb-8f89-5c398ae232ea.png)
 
 
 ## API and Data Sample
