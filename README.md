@@ -17,59 +17,41 @@ https://whimsical.com/copy-of-3vC3s448eJg1Ce6eYYyUrN
 - Pick a value from dropdown
 - Click Search
 - Axios call on connecticut government API with fruits category
-- Displays Farm name and address that sells that fruit
+- Displays Farm name, url and address that sells that fruit
 - Clears the previous results when search next item
+
+#### PostMVP
+- A map feature to display with the farm address location
+- If we click the website url, takes to the farm's website page
 
 
 ## API and Data Sample
-https://data.ct.gov/resource/y6p2-px98.json?category=Fruit
+https://data.ct.gov/resource/y6p2-px98.json?category=Fruit&item=Peaches
 
 ```JSON
 [
   {
+    "farm_name": "Karabin Farms",
     "category": "Fruit",
-    "item": "Grapes",
-    "farmer_id": "16722",
-    "zipcode": "06247",
-    "phone1": "860-455-1351",
+    "item": "Peaches",
+    "farmer_id": "7243",
+    "website": {
+      "url": "http://www.karabinfarms.com"
+    },
+    "zipcode": "06489",
+    "phone1": "860-620-0194",
+    "business": "Karabin Farms",
+    "l": "13",
     "location_1": {
       "type": "Point",
       "coordinates": [
-        -72.03638786699963,
-        41.76654268800047
+        -72.82920259099967,
+        41.61609643000048
       ]
     },
-    "location_1_address": "108 Drain Street",
-    "location_1_city": "Hampton",
+    "location_1_address": "894 Andrews Street",
+    "location_1_city": "Southington",
     "location_1_state": "CT",
-    "location_1_zip": "06247"
+    "location_1_zip": "06489"
   },
-  {
-    "category": "Fruit",
-    "item": "Blueberries",
-    "farmer_id": "2818",
-    "zipcode": "06074",
-    "business": "Robert Sr & Nancy Lickwar",
-    "l": "0",
-    "location_1": {
-      "type": "Point",
-      "coordinates": [
-        -72.62308126799962,
-        41.811254944000495
-      ]
-    },
-    "location_1_address": "419 Main St",
-    "location_1_city": "South Windsor",
-    "location_1_state": "CT",
-    "location_1_zip": "06074"
-  },
-
-
-
-
-
-  
-
-
-
 
