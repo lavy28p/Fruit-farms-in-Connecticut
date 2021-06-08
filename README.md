@@ -57,7 +57,12 @@ https://data.ct.gov/resource/y6p2-px98.json?category=Fruit
         -72.62308126799962,
         41.811254944000495
       ]
-
+    },
+    "location_1_address": "419 Main St",
+    "location_1_city": "South Windsor",
+    "location_1_state": "CT",
+    "location_1_zip": "06074"
+  },
 
 
 
