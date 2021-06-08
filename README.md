@@ -14,6 +14,9 @@ https://whimsical.com/copy-of-3vC3s448eJg1Ce6eYYyUrN
 - Pick a value from dropdown
 - Click Search
 - Axios call on connecticut government API with fruits category
+- Displays Farm name and address that sells that fruit
+- Clears the previous results when search next item
+
 
 ## API and Data Sample
 https://data.ct.gov/resource/y6p2-px98.json?category=Fruit
