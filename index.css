@@ -1,0 +1,37 @@
+
+.site-header {
+  background-color: yellow;
+  
+}
+
+nav {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  text-align: right;
+  
+}
+
+#nav-link {
+  padding: 0px 10px 0px 10px;
+  color: grey;
+}
+
+
+main {
+  
+  background: url("https://i.imgur.com/ndAejYD.jpg");
+  background-size: cover;
+  padding: 300px;
+}
+
+#submit-button {
+  background-color: darkblue;
+  color: white;
+
+}
+
+.site-footer {
+  background-color: aqua;
+  padding: 10px;
+  text-align: center;
+}
