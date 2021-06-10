@@ -3,9 +3,7 @@ const domain = 'https://data.ct.gov/resource/y6p2-px98.json?category=Fruit';
 
 const itemsArray = [];
 let uniqueItemsArray = [];
-let farmName = [];
-let farmSite = [];
-let farmAddr = [];
+
 
 
 
@@ -25,7 +23,7 @@ const fetchData = async () => {
     
     finalInfo.forEach((array) => {     
 
-      const item_name = array.item;
+      let item_name = array.item;
       itemsArray.push(item_name);
      
    });
@@ -64,6 +62,8 @@ submit.addEventListener('click', (e) => {
   e.preventDefault();
   const selectItem = document.getElementById('fruits-list');
   const itemChoice = selectItem.value;
+
+
   fetchFarmData(itemChoice); 
   
 });
@@ -81,6 +81,10 @@ const fetchFarmData = async (itemChoice) => {
     const getInfo = await axios.get(item_url);
     const farmsInfo = getInfo.data.slice(0,200);
     console.log(farmsInfo);
+
+    let farmName = [];
+    let farmSite = [];
+    let farmAddr = [];
     
     farmsInfo.forEach((farm) => { 
       if (farm.farm_name && farm.website && farm.location_1_address) {
@@ -110,21 +114,25 @@ const addFarmInfo = (nameArr,siteArr,addrArr) => {
 
   const div_Info = document.querySelector('#farm-info');
  
+  div_Info.innerHTML = "";
+
   for (let i = 0; i < nameArr.length; i++) {
 
-    const f_Name = document.createElement('p');
+    const f_Name = document.createElement('h4');
     f_Name.classList.add('farm-name');
     f_Name.innerText = nameArr[i];
     div_Info.appendChild(f_Name);
+
+    const f_Addr = document.createElement('div');
+    f_Addr.classList.add('farm-addr');
+    f_Addr.innerText = addrArr[i];
+    div_Info.appendChild(f_Addr);
+
     const f_Site = document.createElement('a');
     f_Site.classList.add('farm-url');
     f_Site.innerText = siteArr[i];
     f_Site.href = siteArr[i];
     div_Info.appendChild(f_Site);
-    const f_Addr = document.createElement('div');
-    f_Addr.classList.add('farm-addr');
-    f_Addr.innerText = addrArr[i];
-    f_Name.appendChild(f_Addr);
 
   }  
 
