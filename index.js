@@ -9,7 +9,10 @@ let farmAddr = [];
 
 
 
-/***********  Fetch item list and farm info from api using axios call **********/
+/* 1.Fetch fruit items list from api using axios call. 
+   2.Push the fruit items to an array 
+   3.Filter unique fruit items to a new array   
+*/
 
 const fetchData = async () => {
   try {
@@ -20,7 +23,6 @@ const fetchData = async () => {
     const finalInfo = farmInfo.slice(0,200);
     console.log(finalInfo);
     
-    //get item name and push to array
     finalInfo.forEach((array) => {     
 
       const item_name = array.item;
@@ -28,7 +30,6 @@ const fetchData = async () => {
      
    });
    
-   //get unique items to add in dropdown list
    uniqueItemsArray = [...new Set(itemsArray)];
    
    addItem(uniqueItemsArray);
@@ -39,34 +40,39 @@ const fetchData = async () => {
 }
 
 
-/********* Dynamically add unique item value from api to drop down list *********/
+/* 1.Add unique fruit items from the array to the  drop down list in dom
+*/
 
 const addItem = (fruits) => {
   fruits.forEach((fruit) => {
     const dropDown = document.querySelector('#fruits-list'); 
     const optionItem = document.createElement('option');
-    optionItem.classList.add('item-choice');
+    optionItem.classList.add(fruit);
     optionItem.innerText = fruit;
     dropDown.appendChild(optionItem);
   });
 }
 
 
-/********************** Add an event listener to search *************************/
+/* 1.Add an event listener to search button 
+   2.Get the value of fruit item picked
+*/
 
 const submit = document.querySelector('#submit-button');
 
 submit.addEventListener('click', (e) => {
   e.preventDefault();
-  const itemChoice = document.querySelector('.item-choice').value;
-  console.log(itemChoice);
+  const selectItem = document.getElementById('fruits-list');
+  const itemChoice = selectItem.value;
   fetchFarmData(itemChoice); 
   
 });
 
 
 
-/******************** Display info of all farms for that item *******************/
+/* 1.Axios call to fetch all the farm info for each fruit item choice 
+   2.Push the farm name, url and address to seperate arrays
+*/
 
 const fetchFarmData = async (itemChoice) => {
   const item_url = `${domain}&item=${itemChoice}`;
@@ -76,7 +82,6 @@ const fetchFarmData = async (itemChoice) => {
     const farmsInfo = getInfo.data.slice(0,200);
     console.log(farmsInfo);
     
-    //get farm name, url and address
     farmsInfo.forEach((farm) => { 
       if (farm.farm_name && farm.website && farm.location_1_address) {
         const fName = farm.farm_name;
@@ -91,13 +96,15 @@ const fetchFarmData = async (itemChoice) => {
    });
 
    addFarmInfo(farmName,farmSite,farmAddr);
-    
+   
   } catch(error) {
     console.error(error.message);
 
   }
 }
 
+/* 1.Create DOM elements for Farm Name, URL and Address
+*/
 
 const addFarmInfo = (nameArr,siteArr,addrArr) => {
 
@@ -119,12 +126,12 @@ const addFarmInfo = (nameArr,siteArr,addrArr) => {
     f_Addr.innerText = addrArr[i];
     f_Name.appendChild(f_Addr);
 
+  }  
+
  }
-}
+ 
+
+/* 1.Call the Main function 
+*/
 
 fetchData();
-
-
-
-
-
