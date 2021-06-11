@@ -4,35 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Pacifico&family=Shadows+Into+Light&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script defer src="index.js" charset="utf-8"></script>
   <link rel="stylesheet" href="index.css">
   <title>Fruit Farms</title>
 </head>
 <body>
-  <header class="site-header">
-      <nav>
+  <div class="container">
+    <header class="site-header">
+      <h1 class="h1-class">Discover Connecticut's Best Farms</h1>
+      <h2 class="h2-class">Shop Local !!</h2>
+      <nav class="nav-class">
         <a id="nav-link" href='#home'>Home</a>
         <a id="nav-link" href='#aboutme'>About Us</a>
         <a id="nav-link" href='#contact'>Contact Us</a>
       </nav> 
   </header>
-  <main>
-    <label for="pick-fruit">Pick a Fruit</label>
+  
+  <main class="site-main">   
+    <label for="pick-fruit" class="label-class">Pick Your Fruit</label>
     <select id="fruits-list">
       <option>Select</option>
     </select>
-    <button id="submit-button" type="submit">Find where to buy!!</button>
-
+    <button id="submit-button" type="submit">Click To Find Your Farm</button>
     <div id="farm-info">
- 
     </div>
-
-
   </main>
+
   <footer class="site-footer">
     <small>&copy; 2021 Farms Picking Guide, Inc</small>
   </footer>
-  
+
+</div>
 </body>
 </html>

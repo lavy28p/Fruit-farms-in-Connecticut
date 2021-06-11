@@ -25,7 +25,7 @@ const fetchData = async () => {
 
       let item_name = array.item;
       itemsArray.push(item_name);
-     
+      
    });
    
    uniqueItemsArray = [...new Set(itemsArray)];
@@ -94,8 +94,7 @@ const fetchFarmData = async (itemChoice) => {
         
         farmName.push(fName);
         farmSite.push(fSite);
-        farmAddr.push(fAddr);
-        
+        farmAddr.push(fAddr);     
       } 
    });
 
@@ -132,10 +131,8 @@ const addFarmInfo = (nameArr,siteArr,addrArr) => {
     f_Site.classList.add('farm-url');
     f_Site.innerText = siteArr[i];
     f_Site.href = siteArr[i];
-    div_Info.appendChild(f_Site);
-
+    div_Info.appendChild(f_Site);   
   }  
-
  }
  
 
