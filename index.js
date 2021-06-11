@@ -25,7 +25,7 @@ const fetchData = async () => {
 
       let item_name = array.item;
       itemsArray.push(item_name);
-      
+
    });
    
    uniqueItemsArray = [...new Set(itemsArray)];
@@ -45,7 +45,7 @@ const addItem = (fruits) => {
   fruits.forEach((fruit) => {
     const dropDown = document.querySelector('#fruits-list'); 
     const optionItem = document.createElement('option');
-    optionItem.classList.add(fruit);
+    optionItem.classList.add('select-content');
     optionItem.innerText = fruit;
     dropDown.appendChild(optionItem);
   });
