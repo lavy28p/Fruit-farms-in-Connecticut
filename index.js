@@ -117,7 +117,7 @@ const addFarmInfo = (nameArr,siteArr,addrArr) => {
 
   for (let i = 0; i < nameArr.length; i++) {
 
-    const f_Name = document.createElement('h4');
+    const f_Name = document.createElement('p');
     f_Name.classList.add('farm-name');
     f_Name.innerText = nameArr[i];
     div_Info.appendChild(f_Name);
@@ -131,6 +131,7 @@ const addFarmInfo = (nameArr,siteArr,addrArr) => {
     f_Site.classList.add('farm-url');
     f_Site.innerText = siteArr[i];
     f_Site.href = siteArr[i];
+    f_Site.setAttribute('target', '_blank');
     div_Info.appendChild(f_Site);   
   }  
  }

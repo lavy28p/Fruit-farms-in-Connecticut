@@ -16,7 +16,7 @@
 .site-header {
   grid-column: 1 / 3;
   grid-row: 1;
-  margin-top: 30px;    
+  margin-top: 30px;   
 }
 
 nav {
@@ -42,12 +42,14 @@ h1, h2 {
 .h1-class {
   padding: 20px;
   font-size: 60px;
+  font-weight: bold;
 }
 
 .h2-class {
   padding: 20px;
   font-size: 35px;
 }
+
 
 .nav-class {
   background: rgb(39, 26, 26);
@@ -123,6 +125,15 @@ h1, h2 {
   width: 100%;
   height: 400px;
   overflow-y: scroll;  
+  
+}
+
+.farm-name {
+  font-size: 22px;
+}
+
+.farm-url {
+  color: yellow;
 }
 
 .site-footer { 
