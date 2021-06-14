@@ -90,6 +90,11 @@ h1, h2 {
 
 }
 
+.fruit-option {
+  background: rgb(39, 26, 26);
+
+}
+
 #submit-button {
   display: inline-block;
   background: rgb(39, 26, 26);
@@ -134,7 +139,7 @@ h1, h2 {
 }
 
 @media only screen 
-   and (min-device-width: 414px)
+   and (min-device-width: 320px)
    and (max-device-width: 736px) {
 
     .container {
@@ -189,6 +194,13 @@ h1, h2 {
       width: 100%;
       height: 400px;
       overflow-y: scroll;  
+    }
+
+    .site-footer { 
+      padding: 1px;
+      font-size: 5px;
+      margin-bottom: 1px; 
+      height: 3px;
     }
   
  
