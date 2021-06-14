@@ -18,7 +18,7 @@ const fetchData = async () => {
     const getInfo = await axios.get(domain);
     const farmInfo = getInfo.data;
     console.log(farmInfo);
-    const finalInfo = farmInfo.slice(0,200);
+    const finalInfo = farmInfo;
     console.log(finalInfo);
     
     finalInfo.forEach((array) => {     
@@ -79,7 +79,7 @@ const fetchFarmData = async (itemChoice) => {
   try {
 
     const getInfo = await axios.get(item_url);
-    const farmsInfo = getInfo.data.slice(0,200);
+    const farmsInfo = getInfo.data;
     console.log(farmsInfo);
 
     let farmName = [];
