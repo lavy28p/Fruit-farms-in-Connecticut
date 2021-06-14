@@ -10,8 +10,7 @@
   background: linear-gradient(to left, white, black);
   background: url("https://i.imgur.com/qnt7mns.jpg");
   background-size: cover;
-  background-position-y: center;
-  background-size: cover;  
+  background-position-y: center;  
 }
 
 .site-header {
@@ -119,7 +118,6 @@ h1, h2 {
   width: 100%;
   height: 400px;
   overflow-y: scroll;  
-  font-family: 'Oswald', sans-serif; 
 }
 
 .site-footer { 
@@ -133,4 +131,65 @@ h1, h2 {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 10px; 
+}
+
+@media only screen 
+   and (min-device-width: 414px)
+   and (max-device-width: 736px) {
+
+    .container {
+      display: grid;
+      grid-template-rows: 300px 475px 50px;
+      background-repeat: no-repeat; 
+      background-position: center;
+    }
+    
+    .site-main {
+      padding: 2px;
+    }
+
+    h1 h2 {
+      height: 30px;
+    }
+    .h1-class {
+      font-size: 30px;
+      padding: 2px;
+    }
+
+    .h2-class {
+      font-size: 15px;
+      padding: 2px;
+    }
+
+    .nav-class {
+      font-size: 15px;
+      height: 10px;
+    }
+
+    .label-class {
+      padding: 0px;
+      font-size: 20px;
+    }
+
+    #fruits-list {
+      padding: 0px;
+      font-size: 15px;
+      margin-inline: 0px;
+    }
+
+    #submit-button {
+      display: inline-block;
+      padding: 0px;
+      font-size: 15px;
+    }
+
+    #farm-info {
+      display: block;
+      margin-top: 5px;
+      width: 100%;
+      height: 400px;
+      overflow-y: scroll;  
+    }
+  
+ 
 }
